@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object 1</title>
+</head>
+<body>
+    <script>
+        //bila panjang, lebih baik menggunakan string 
+        //contoh : "Nama Lengkap"
+        //bila hanya satu kata, bisa langsung
+        const orang = {
+            Nama : "Farhan Aziz",
+            Alamat : "Indonesia",
+            Umur : 22
+        };
+
+        console.table(orang);
+
+        // Menghapus
+        delete orang["Umur"];
+
+        console.table(orang);
+
+    </script>
+</body>
+</html>

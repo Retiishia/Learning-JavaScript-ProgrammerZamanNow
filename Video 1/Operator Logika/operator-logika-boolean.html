@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika Boolean</title>
+</head>
+<body>
+    <script>
+
+    const nilaiUjian = 80;
+    const nilaiAbsensi = 80;
+
+    const lulusUjian = nilaiUjian > 75;
+    document.writeln(lulusUjian);
+    document.writeln("<br>")
+
+    const lulusAbsensi = nilaiAbsensi > 75;
+    document.writeln(lulusAbsensi);
+    document.writeln("<br>")
+
+    // AND (&&)
+    const lulus = lulusUjian && lulusAbsensi;
+    document.writeln(lulus);
+
+    // OR (||)
+    const lulus1 = lulusUjian || lulusAbsensi;
+    document.writeln(lulus);
+
+    </script>
+</body>
+</html>

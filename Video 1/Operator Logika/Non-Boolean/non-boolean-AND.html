@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika Non-Boolean / AND &&/title>
+</head>
+<body>
+    <script>
+
+    //Operator Logika AND (&&), membaca dari kiri ke kanan.
+    //Operator ini akan mengambil nilai pertama yang falsy.
+    //Jika tidak ada satupun yang bernilai falsy,
+    //maka yang terakhir yang akan diambil.
+
+        console.info("HELLO" && ''); // ''
+        console.info("" && []); // ""
+        console.info("0" && "NOL"); // "NOL"
+        console.info(0 && "NOL"); // 0
+        console.info(null && "NULL"); // UNDEFINED
+        console.info(undefined && "UNDEFINED"); //NULL
+        console.info(undefined && null); //NULL
+
+    </script>
+</body>
+</html>

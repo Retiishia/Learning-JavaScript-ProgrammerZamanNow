@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+    <script>
+
+        const orang = {};
+
+        //Menambah atau Mengubah
+        orang["Nama"] = "Farhan Aziz";
+        orang["Alamat"] = "Indonesia";
+        orang["Umur"] = 22;
+
+        console.table(orang);
+
+        // Menghapus
+        delete orang["Umur"];
+
+        console.table(orang);
+
+    </script>
+</body>
+</html>

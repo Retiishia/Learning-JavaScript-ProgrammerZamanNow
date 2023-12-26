@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika Non - Boolean // OR ||</title>
+</head>
+<body>
+    <script>
+
+    //Operator Logika OR (||), membaca dari kiri ke kanan.
+    //Operator ini akan mengambil nilai pertama yang truthy.
+    //Jika tidak ada satupun yang bernilai truthy,
+    //maka yang terakhir yang akan diambil.
+
+    console.info("Hello" || ""); // Hello
+    console.info("" || []); //"[]"
+    console.info("0" || "NOL"); // "0"
+    console.info(0 || "NOL"); // NOL
+    console.info(null || "NULL"); //NULL
+    console.info(undefined || "UNDEFINED"); //"UNDEFINED"
+
+    const person = {
+        firstName: "Farhan",
+        lastName: "Aziz"
+    };
+
+    const name = person.firstName || person.lastName;
+    console.info(name);
+
+
+    </script>
+</body>
+</html>
