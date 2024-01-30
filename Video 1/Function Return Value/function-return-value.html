@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Parameter</title>
+</head>
+<body>
+
+    <!-- Function
+    - Secara default, function itu tidak menghasilkan value apapun, namun jika kita ingin,
+      kita bisa membuat sebuah function mengembalikan value
+    - Agar function bisa menghasilkan value, kita bisa menggunakan kata kunci return
+      di dalam function nya.
+    - Dan di dalam block function, untuk menghasilkan nilai tersebut, kita harus menggunakan
+      kata kunci return, lalu diikuti dengan data yang ingin kita hasilkan.
+    - Function hanya bisa mengembalikkan satu data, jika kita ingin mengembalikan beberapa data
+      sekaligus, kita bisa menggunakan Array sebagai return value nya.  -->
+    <script>
+
+   // membuat function 
+   function sayHello(firstName, lastName) {
+       const say = (`<p>Hello ${firstName} ${lastName}</p>`);
+       return say;
+   }
+
+   // memanggil function 
+   const result = sayHello("Farhan", "Aziz");
+   document.writeln(`<p>${result}</p>`); 
+
+    </script>
+</body>
+</html> 
