@@ -7,15 +7,6 @@
 </head>
 <body>
 
-    <!-- Function
-    - Secara default, function itu tidak menghasilkan value apapun, namun jika kita ingin,
-      kita bisa membuat sebuah function mengembalikan value
-    - Agar function bisa menghasilkan value, kita bisa menggunakan kata kunci return
-      di dalam function nya.
-    - Dan di dalam block function, untuk menghasilkan nilai tersebut, kita harus menggunakan
-      kata kunci return, lalu diikuti dengan data yang ingin kita hasilkan.
-    - Function hanya bisa mengembalikkan satu data, jika kita ingin mengembalikan beberapa data
-      sekaligus, kita bisa menggunakan Array sebagai return value nya.  -->
     <script>
 
    // membuat function 
@@ -27,6 +18,27 @@
    // memanggil function 
    const result = sayHello("Farhan", "Aziz");
    document.writeln(`<p>${result}</p>`); 
+
+   function getFinalValue(value) {
+       if (value > 90) {
+        return "A";
+       }
+       else if (value > 80) {
+        return "B";
+       }
+       else if (value > 70) {
+        return "C";
+       }
+       else if (value > 60) {
+        return "D";
+       }
+       else {
+        return "E";
+       }
+   }
+
+   const finalValue = getFinalValue(76);
+   document.writeln(`<p>${finalValue}</p>`);
 
     </script>
 </body>
