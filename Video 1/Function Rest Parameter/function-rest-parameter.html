@@ -29,6 +29,18 @@
     sum('Apple', 5, 5, 6, 7, 5, 6);
     sum('Banana', 9, 5, 2, 3, 4);
 
+    <!-- SPREAD SYNTAX 
+    - SPREAD SYNTAX digunakan untuk mengirim data ke function
+    - Kadang kita terlanjur memiliki data berupa Array 
+    - Tapi untungnya kita juga bisa mengirim Array ke Rest Parameter
+    - Kita bisa gunakan ... (titik tiga kali) diikuti dengan array nya ketika memanggil function
+    - Fitur ini dinamakan Spread SYNTAX
+    -->
+
+    const values = [10,10,10,10,10];
+    sum("Test", ...values);
+
+
     </script>
 </body>
 </html>
