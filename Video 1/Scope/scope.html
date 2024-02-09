@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <!-- Scope -->
+    <!-- // Scope merupakan area akses sebuah data
+    // Ada dua jenis scope, lgobal scope dan local scope
+    // Setiap kita membuat function, maka kita akan membuat sebuah Scope
+       untuk function tersebut
+    // Data di global scope bisa diakses dari local scope, namun data di loca scope
+       hanya bisa di akses di local scope tersebut atau di scope local dibawahnya
+       (dalam kasus function dalam function) -->
+    <script>
+
+    // global scope
+    let counter = 0;
+
+    //global scope 
+    function hitme() {
+        // local scope hitme
+        counter++;
+    }
+
+    // global scope
+    function other() {
+        // local scope other
+    }
+
+    hitme();
+    hitme();
+
+    console.info(counter);
+    </script>
+</body>
+</html> 

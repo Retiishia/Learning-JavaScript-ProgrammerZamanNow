@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+
+    function first() {
+        // local scope First
+        let firstVariable = "first";
+    }
+
+    function second() {
+        // local scope Second
+        let secondVariable = "second";
+    }
+
+    first();
+    second();
+
+    console.info(firstVariable); // cannnot access local scope
+    console.info(secondVariable); // cannnot access local scope
+    </script>
+</body>
+</html> 
