@@ -8,21 +8,24 @@
 <body>
     <script>
 
+    // global scope
     function first() {
         // local scope First
         let firstVariable = "first";
     }
 
+    // global scope
     function second() {
         // local scope Second
         let secondVariable = "second";
+        console.info(firstVariable); //ERROR
     }
 
     first();
     second();
 
-    console.info(firstVariable); // cannnot access local scope
-    console.info(secondVariable); // cannnot access local scope
+    console.info(firstVariable); // ERROR, cannnot access local scope
+    console.info(secondVariable); // ERROR ,cannnot access local scope
     </script>
 </body>
 </html> 
