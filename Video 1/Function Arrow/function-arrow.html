@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Arrow</title>
+</head>
+<body>
+
+    
+    <script>
+    //ARROW FUNCTION
+    //====
+    //Arrow function adalah alternatif pembuatan fucntion yang lebih sederhana dari function biasanya.
+    //Namun terdapat limitasi dan juga tidak bisa digunakan di semua situasi
+    //Dinamakan arrow function karena menggunakan tanda => (Seperti Panah)
+    //Berikut contoh beberapa kekurangan Arrow Function :
+    //1. Tidak memiliki fitur arguments object
+    //2. Tidak bisa menggunakan function generator
+    //3. Tidak bisa mengakses this (yang nanti akan dibahas di function di object)
+    //4. Tidak bisa mengakses super (yang nanti akan dibahas di JavaScript Object Oriented Programming)
+
+    const sayHello = (name) => {
+        const say = `Hello ${name}`;
+        console.info(say);
+    }
+
+    sayHello("Farhan");
+
+    //======================================
+    //Arrow Function Tanpa block
+    // Jika sebuah arrow function isinya sederhana, misal hanya satu baris.
+    // Kita bisa membuat arrow function tanpa harus menggunakan block
+
+    const sayHello2 = (name) => console.info(`Hello ${name}`);
+
+    //============================================
+    //Arrow Function Return Value
+    // Arrow function bisa mengembalikan value, sama seperti function biasanya.
+    // Jika menggunakan block, maka kita perlu menggunakan kunci return
+    // Jika tidak menggunakan block, kita tidak perlu menggunakan kata kunci return.
+
+    const sum = (first, second) => first + second;
+
+    console.info(sum(9, 5));
+
+    //============================
+    //Arrow Function Tanpa Kurung Parameter
+    // Jika parameter di arrow function hanya satu, kita bisa tidak menggunakan kurung pada parameter
+
+    const sayHello3 = name => console.info(`Hello ${name}`);
+
+    sayHello3("Farhan");
+
+    </script>
+</body>
+</html> 
