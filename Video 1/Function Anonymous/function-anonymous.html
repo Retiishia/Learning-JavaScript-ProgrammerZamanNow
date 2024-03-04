@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Function Anonymous</title>
+    <title>Function Parameter Anonymous</title>
 </head>
 <body>
     <script>
 
-    const say = function(name) {
-        document.writeln(`<p>Hello ${name}</p>`);
-    };
+    function giveMeName(callback) {
+        callback("Retiishia");
+    }
 
-    say("Farhan");  
+    giveMeName(function (name) {
+        document.writeln(`<p>Hello ${name}</p>`);
+    });
 
     </script>
 </body>
