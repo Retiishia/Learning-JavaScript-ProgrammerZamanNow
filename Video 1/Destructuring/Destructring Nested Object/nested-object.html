@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Nested Object</title>
+</head>
+<body>
+     <!-- Destructuring
+    -  Destructuing adalah fitur yang bisa digunakan untuk membongkar value-value
+       di array atau object ke dalam variable-variable
+    -  Fitur ini sangat mempermudah kitak etika ingin mengambil data dari array atau object
+       tanpa harus melakukan pengambilan data satu persatu.
+    --> 
+    <script>
+    
+    const person = {
+        firstName : "Farhan",
+        lastName : "Aziz",
+        address: {
+            street: "Jalan Belum Ada",
+            city: "Bandung",
+            country: "Indonesia"
+        },
+        hobby: "Music",
+        channel: "Resity Producer"
+    };
+
+    // Destructuring Object
+    const {firstName, lastName, address: {country, city, street}, ...others} = person;
+    console.info(firstName);
+    console.info(lastName);
+    console.info(city);
+    console.info(country);
+    console.info(street);
+    console.info(others);
+
+
+    </script>
+</body>
+</html>

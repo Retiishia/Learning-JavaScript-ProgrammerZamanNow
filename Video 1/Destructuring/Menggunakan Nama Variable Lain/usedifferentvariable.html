@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menggunakan Nama Variable Lain</title>
+</head>
+<body>
+     <!-- Destructuring
+    -  Saat melakukan destructuring di Array, kita bisa dengan mudah membuat nama
+       variable sesuka kita
+    - Namun pada saat melakukan destructuring, kita harus membuat nama variable
+      sama dengan nama property
+    - Kita juga bisa menggunakan nama variable lain saat melakukan destructuring object kita mau
+     -->
+    <script>
+
+    const person = {
+        firstName: "Farhan",
+        lastName : "Aziz"
+    };
+    
+    const {
+        firstName : namaDepan,
+        middleName : namaTengah = "Retiishia",
+        lastName : namaBelakang
+    } = person;
+
+    console.info(namaDepan);
+    console.info(namaTengah);
+    console.info(namaBelakang);
+
+
+
+    </script>
+</body>
+</html>
